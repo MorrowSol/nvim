@@ -99,7 +99,7 @@ return {
 					max_value_lines = 100,
 				},
 			})
-			vim.keymap.set("n", "<F6>", ":lua require('dapui').toggle()<CR>")
+			vim.keymap.set("n", "<F7>", ":lua require('dapui').toggle()<CR>")
 		end,
 	},
 	{

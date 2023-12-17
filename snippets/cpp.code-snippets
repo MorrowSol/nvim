@@ -1,0 +1,38 @@
+{
+    "c/cpp-snippet": {  
+        "prefix": "init",
+	    "body": [
+	        "#include \"node.h\"",
+            "",
+            "class Solution{",
+            "public:",
+            "\t$0",
+            "};",
+            "int main(){",
+            "\tSolution solution;",
+            "\t",
+            "\tcout<<__cplusplus<<endl;",
+            "\treturn 0;",
+            "}"
+        ],
+        "description": "cpp init",
+        "scope": "cpp"
+    },
+    "python-snippet": {
+        "prefix": "trig",
+        "body": [
+            "this is $1",
+            "a different snippet $2"
+        ],
+        "description": "Another snippet-description.",
+        "scope": "python"
+    },
+    "global snippet": {
+        "prefix": "trigg",
+        "body": [
+            "this is $1",
+            "the last snippet $2"
+        ],
+        "description": "One last snippet-description.",
+    }
+}

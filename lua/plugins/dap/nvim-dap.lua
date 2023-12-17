@@ -29,9 +29,9 @@ return {
 				},
 			}
 			dap.configurations.c = dap.configurations.cpp
-			-- nil表示调用默认位置 当前目录.vscode/launch.json
+			-- nil表示调用默认位置 当前目录的.vscode/launch.json
 			require("dap.ext.vscode").load_launchjs(nil, { cppdbg = { "cpp" } })
-			vim.keymap.set("n", "<F5>", ":DapContinue<CR>")
+			vim.keymap.set("n", "<F6>", ":DapContinue<CR>")
 			vim.keymap.set("n", "<F9>", ":DapToggleBreakpoint<CR>")
 			vim.keymap.set("n", "<F10>", ":DapStepOver<CR>")
 			vim.keymap.set("n", "<F11>", ":DapStepInto<CR>")
