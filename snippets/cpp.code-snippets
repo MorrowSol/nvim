@@ -3,6 +3,7 @@
         "prefix": "init",
 	    "body": [
 	        "#include \"node.h\"",
+            "using namespace std;",
             "",
             "class Solution{",
             "public:",

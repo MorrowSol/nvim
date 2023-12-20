@@ -14,7 +14,23 @@ return {
 
 		nvimtree.setup({
 			sort = {
-				sorter = "case_sensitive",
+				sorter = function(nodes)
+					table.sort(nodes, function(a, b)
+						-- directory first
+						if a.type == "directory" and b.type == "file" then
+							return true
+						elseif a.type == "file" and b.type == "directory" then
+							return false
+						end
+						local a_num = string.match(a.name, "^[0-9]+")
+						local b_num = string.match(b.name, "^[0-9]+")
+						if a_num and b_num then
+							return tonumber(a_num) < tonumber(b_num)
+						else
+							return a.name < b.name
+						end
+					end)
+				end,
 			},
 			view = {
 				width = 30,

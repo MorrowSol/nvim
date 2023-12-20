@@ -31,8 +31,8 @@ return {
 				custom_surroundings = nil,
 				highlight_duration = 500,
 				mappings = {
-					add = "<leader>a", -- Add surrounding in Normal and Visual modes
-					delete = "<leader>d", -- Delete surrounding
+					add = "<leader>sa", -- Add surrounding in Normal and Visual modes
+					delete = "<leader>sd", -- Delete surrounding
 					-- find = "<leader>f", -- Find surrounding (to the right)
 					-- find_left = "<leader>F", -- Find surrounding (to the left)
 					-- highlight = "<leader>h", -- Highlight surrounding
