@@ -1,5 +1,7 @@
 return {
 	"mfussenegger/nvim-lint",
+	-- 使用clangd自带的clang-tidy
+	enabled = false,
 	config = function()
 		require("lint").linters_by_ft = {
 			cpp = { "cpplint" },

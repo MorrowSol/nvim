@@ -11,7 +11,7 @@ return {
 	},
 	config = function(_, opts)
 		require("conform.formatters.clang_format").args = {
-			"--style={BasedOnStyle: Google, IndentWidth: 4}",
+			"--style={BasedOnStyle: Google, IndentWidth: 4, AccessModifierOffset: -3}",
 		}
 		require("conform").setup(opts)
 	end,

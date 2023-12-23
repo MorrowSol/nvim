@@ -2,8 +2,9 @@
     "c/cpp-snippet": {  
         "prefix": "init",
 	    "body": [
-	        "#include \"node.h\"",
-            "using namespace std;",
+            "// Copyright chen",
+            "#include <iostream>",
+	        "#include \"./node.h\"",
             "",
             "class Solution{",
             "public:",
@@ -12,7 +13,7 @@
             "int main(){",
             "\tSolution solution;",
             "\t",
-            "\tcout<<__cplusplus<<endl;",
+            "\tstd::cout<<__cplusplus<<std::endl;",
             "\treturn 0;",
             "}"
         ],
