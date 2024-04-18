@@ -5,8 +5,8 @@ return {
 			filetype = {
 				cpp = {
 					"g++ -g $file --std=c++17 -I $(pwd)/.vscode",
-					"-o $(pwd)/.vscode/exe/$fileNameWithoutExt.exe",
-					"&& $(pwd)/.vscode/exe/$fileNameWithoutExt.exe",
+					"-o $(pwd)/.vscode/exe/$fileNameWithoutExt",
+					"&& $(pwd)/.vscode/exe/$fileNameWithoutExt",
 				},
 			},
 		})

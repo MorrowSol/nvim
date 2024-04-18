@@ -3,6 +3,11 @@ vim.g.mapleader = " "
 local keymap = vim.keymap
 
 keymap.set("i", "jk", "<ESC>")
+-- 经常按错
+vim.cmd("command! -nargs=0 W w")
+vim.cmd("command! -nargs=0 Wq wq")
+vim.cmd("command! -nargs=0 Q q")
+vim.g.UltiSnipsJumpForwardTrigger = "<Tab>"
 -- window navigation
 keymap.set("n", "<C-h>", "<C-w>h")
 keymap.set("n", "<C-j>", "<C-w>j")
