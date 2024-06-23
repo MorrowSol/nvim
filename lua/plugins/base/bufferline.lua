@@ -10,10 +10,15 @@ return {
 					{
 						filetype = "NvimTree",
 						text = "File Explorer",
-						highlight = "Directory",
-						separator = true, -- use a "true" to enable the default, or set your own character
+						text_align = "center",
+						separator = true,
 					},
 				},
+				diagnostics = "nvim_lsp",
+				diagnostics_indicator = function(count, level)
+					local icon = level:match("error") and " " or ""
+					return " " .. icon .. count
+				end,
 			},
 		})
 		vim.keymap.set("n", "<S-h>", ":BufferLineCyclePrev<CR>")
