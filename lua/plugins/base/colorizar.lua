@@ -21,6 +21,7 @@ return {
 				},
 				"javascript",
 				"html",
+				"vue",
 			})
 		end,
 	},

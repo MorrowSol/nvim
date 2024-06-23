@@ -26,7 +26,6 @@ opt.termguicolors = true
 opt.signcolumn = "yes"
 -- 将连字符视为单词的一部分
 opt.iskeyword:append("-")
-opt.iskeyword:append("-,>")
 -- 搜索大小写不敏感
 opt.ignorecase = true
 opt.smartcase = true

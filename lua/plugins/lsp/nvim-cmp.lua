@@ -13,7 +13,6 @@ return {
 			"rafamadriz/friendly-snippets",
 			"onsails/lspkind-nvim",
 		},
-
 		config = function()
 			local cmp = require("cmp")
 			local lspkind = require("lspkind")
@@ -34,6 +33,7 @@ return {
 				sources = cmp.config.sources({
 					{ name = "nvim_lsp" },
 					{ name = "luasnip" }, -- For luasnip users.
+					{ name = "codeium" },
 				}, {
 					{ name = "buffer" },
 					{ name = "path" },
@@ -50,7 +50,11 @@ return {
 						-- 	nvim_lua = "[Lua]",
 						-- 	latex_symbols = "[Latex]",
 						-- },
+						symbol_map = { Codeium = "" },
 					}),
+				},
+				experimental = {
+					ghost_text = { hlgroup = "Comment" },
 				},
 			})
 			cmp.setup.filetype("gitcommit", {
