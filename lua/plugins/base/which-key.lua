@@ -6,27 +6,27 @@ return {
 		vim.o.timeoutlen = 300
 		require("which-key").setup({})
 		local wk = require("which-key")
-		wk.register({
-			f = {
-				name = " telescope", -- optional group name
-			},
-			s = {
-				name = " mini.surround",
-			},
-			c = {
-				name = " lsp code_action",
-			},
-			r = {
-				name = " lsp rename",
-			},
-			x = {
-				name = " trouble",
-			},
-			d = {
-				name = "diagnostic.open_float",
-			},
-		}, {
-			prefix = "<leader>",
-		})
+		-- wk.add({
+		-- 	f = {
+		-- 		name = " telescope", -- optional group name
+		-- 	},
+		-- 	s = {
+		-- 		name = " mini.surround",
+		-- 	},
+		-- 	c = {
+		-- 		name = " lsp code_action",
+		-- 	},
+		-- 	r = {
+		-- 		name = " lsp rename",
+		-- 	},
+		-- 	x = {
+		-- 		name = " trouble",
+		-- 	},
+		-- 	d = {
+		-- 		name = "diagnostic.open_float",
+		-- 	},
+		-- }, {
+		-- 	prefix = "<leader>",
+		-- })
 	end,
 }

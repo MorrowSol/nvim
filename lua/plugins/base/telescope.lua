@@ -10,34 +10,35 @@ return {
 		require("telescope").setup({})
 	end,
 	keys = {
-		{
-			"<leader>ff",
-			function()
-				require("telescope.builtin").find_files()
-			end,
-			desc = "find_files",
-		},
-		{
-			"<leader>fg",
-			function()
-				require("telescope.builtin").live_grep()
-			end,
-			"<cmd>lua require('telescope.builtin').live_grep()<CR>",
-			desc = "live_grep",
-		},
-		{
-			"<leader>fb",
-			function()
-				require("telescope.builtin").buffers()
-			end,
-			desc = "buffers",
-		},
-		{
-			"<leader>fh",
-			function()
-				require("telescope.builtin").help_tags()
-			end,
-			desc = "help_tags",
-		},
+		-- 改为fzf
+		-- {
+		-- 	"<C-p>",
+		-- 	function()
+		-- 		require("telescope.builtin").find_files()
+		-- 	end,
+		-- 	desc = "find_files",
+		-- },
+		-- {
+		-- 	"<C-f>",
+		-- 	function()
+		-- 		require("telescope.builtin").live_grep()
+		-- 	end,
+		-- 	"<cmd>lua require('telescope.builtin').live_grep()<CR>",
+		-- 	desc = "live_grep",
+		-- },
+		-- {
+		-- 	"<leader>fb",
+		-- 	function()
+		-- 		require("telescope.builtin").buffers()
+		-- 	end,
+		-- 	desc = "buffers",
+		-- },
+		-- {
+		-- 	"<leader>fh",
+		-- 	function()
+		-- 		require("telescope.builtin").help_tags()
+		-- 	end,
+		-- 	desc = "help_tags",
+		-- },
 	},
 }

@@ -1,5 +1,6 @@
 return {
 	"aznhe21/actions-preview.nvim",
+	enable = false,
 	config = function()
 		require("actions-preview").setup({
 			-- options for vim.diff(): https://neovim.io/doc/user/lua.html#vim.diff()

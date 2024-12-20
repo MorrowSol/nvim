@@ -3,10 +3,13 @@ return {
 	version = "*",
 	config = function()
 		require("toggleterm").setup({
-			open_mapping = "<C-/>",
+			open_mapping = [[<c-\>]],
+			insert_mappings = true,
+			terminal_mappings = true,
 			direction = "float",
-			shade_terminals = true,
+			start_in_insert = true,
 		})
+
 		local Terminal = require("toggleterm.terminal").Terminal
 		local lazygit = Terminal:new({ cmd = "lazygit", hidden = true })
 

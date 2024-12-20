@@ -30,11 +30,20 @@ opt.iskeyword:append("-")
 opt.ignorecase = true
 opt.smartcase = true
 -- 复制闪烁
-vim.api.nvim_create_autocmd("TextYankPost", {
-	callback = function()
-		vim.highlight.on_yank({
-			higroup = "IncSearch",
-			timeout = 100,
-		})
-	end,
-})
+-- vim.api.nvim_create_autocmd("TextYankPost", {
+-- 	callback = function()
+-- 		vim.highlight.on_yank({
+-- 			higroup = "IncSearch",
+-- 			timeout = 100,
+-- 		})
+-- 	end,
+-- })
+
+if vim.fn.has("wsl") then
+	vim.cmd([[
+  augroup Yank
+  autocmd!
+  autocmd TextYankPost * :call system('/mnt/c/windows/system32/clip.exe ',@")
+  augroup END
+  ]])
+end
